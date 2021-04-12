@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>All Tutorial Issues &mdash; Issue CRUD Tutorial</title>
+    <meta name="decorator" content="atl.general">
+</head>
+<body class="page-type-admin">
+<div class="content-container" id="issue-crud-container">
+
+    <div class="content-body">
+
+            <h1>Repeated words</h1>
+        <ul>
+            #foreach( $issue in $issues )
+                <li>$issue</li>
+            #end
+        </ul>
+        <form method="get" action="issuecrud" class="aui">
+            <input type="hidden" name="actionType" value="new">
+        </form>
+    </div>
+</div>
+</body>
+</html>
